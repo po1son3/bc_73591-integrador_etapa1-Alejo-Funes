@@ -5,12 +5,26 @@
 .main-header {
     display: flex;
     flex-direction: column-reverse;
+
+    @media screen and (min-width: 992px) {
+        & {
+            flex-direction: column;
+        }
+    }
 }
 
 #menu {
     display: none;
 
     /* Hacer funcionar el checkbox -> Hacer funcionar el menú hamburgüesa */
+
+    &:checked + .nav-bar {    /* al ponerle "checked" este mismo pasa a permanecer activo */
+        display: block;
+    }
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors */
+    &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
+        background-color: yellow;
+    }
 }
 
 /* ----------------------------------------------- */
@@ -19,13 +33,19 @@
 
 .nav-bar {
     background-color: mediumaquamarine;
-  /*   display: none; */
+    display: none;
 
     &__nav-list { /* .nav-bar__nav-list */
         display: flex;
         flex-direction: column;
         justify-content: center;
         list-style-type: none;
+
+        @media screen and (min-width: 992px) {
+            & {
+                flex-direction: row;
+            } 
+        }
     }
 
     &__nav-item { /* .nav-bar__nav-item */
@@ -38,6 +58,12 @@
         background-color: purple;
         padding: 1rem 2rem;
         color: white;
+    }
+
+    @media screen and (min-width: 992px) {
+        & {
+            display: block;
+        }
     }
 }
 
@@ -94,7 +120,7 @@
     background-color: red;
     flex: 0 0 3rem;
     position: relative;
-    cursor: pointer; /* manito */
+    cursor: pointer; /* manito, al ponerle cursos pointer lo que pasa es que al achicar el modelo el cursos se hace redondo simulando a lo que sería el dedo */
 
     &__label { /* .menu-toogle__label */
         display: block;
@@ -124,6 +150,12 @@
 
     &__bottom-bread {
         bottom: .8rem;
+    }
+
+    @media screen and (min-width: 992px) {
+        & { /* .menu-toogle */
+            display: none;  
+        }
     }
 
 }
