@@ -4,7 +4,8 @@
 /* MOBILE FIRST */
 .main-header {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse;// esto es para el menú hamburguesa
+    color: #EAECEB;
 
     @media screen and (min-width: 992px) {
         & {
@@ -15,7 +16,7 @@
 
 #menu {
     display: none;
-
+    
     /* Hacer funcionar el checkbox -> Hacer funcionar el menú hamburgüesa */
 
     &:checked + .nav-bar {    /* al ponerle "checked" este mismo pasa a permanecer activo */
@@ -79,12 +80,13 @@
     &__logo-container { /* .search-bar__logo-container */
         width: 18.75rem;
         height: 3.75rem;
+        background-color: #1D201F;
     }
 
     &__form-container { /* .search-bar__form-container */
         padding: 1rem;
 
-        background-color: gold;
+        background-color: #1D201F;
         display: flex;
         flex-basis: 100%;
         justify-content: center;
@@ -92,21 +94,22 @@
     }
 
     &__form-label {
-        background-color: greenyellow;
+        background-color: #383D3B;
     }
 
     &__form-search {
-        background-color: deeppink;
+        background-color: #EAECEB;
     }
 
     &__form-submit {
-        background-color: darkslategray;
+        background-color: #383D3B;
+        color: #EAECEB;
     }
 
     &__carrito-container {
         /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
         flex: 0 0 3rem; /* shorthand (grow shrink basis) */
-        background-color: goldenrod;
+        background-color: #1D201F;
     }
 }
 
