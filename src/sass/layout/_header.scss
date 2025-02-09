@@ -81,8 +81,36 @@
         width: 18.75rem;
         height: 3.75rem;
         background-color: #1D201F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Noto Serif Hentaigana", serif;
+        font-size: 22px;
+        
+
+
+    .texto-largo {
+        display: none;
+        font-size: 22px;
+    }
+    .texto-corto { 
+        display: block;
+        font-size: 30px;
+    }
+   
+
+    @media screen and (min-width:992px){
+        .texto-largo{
+            display: block;
+        }
+        .texto-corto{
+            display: none;
+        }
+
+
     }
 
+}
     &__form-container { /* .search-bar__form-container */
         padding: 1rem;
 
