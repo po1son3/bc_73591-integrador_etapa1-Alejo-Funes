@@ -30,4 +30,5 @@ npm i sass-embedded -D
 En este proyecto lo que se llevará a cabo es un ecommerce centrado en la venta de ropa, su nombre es luxury paradise(inventado)
 en esta primera etapa lo que se hizo desde un principio es analizar e interpretar el ya antes hecho código // primer guardado git(commit)
 en la segunda etapa se busca el elegir colores primarios y secundarios, y jugar con ellos para preciar como están estructurados, buscando de una manera una armonía entre estos. (segundo commit)
-en la tercera etapa es arreglar y poner un logo que en este caso solo será en palabras "luxury paradise" y para en versión mobile será "LP" abreviado.
+en la tercera etapa es arreglar y poner un logo que en este caso solo será en palabras "luxury paradise" y para en versión mobile será "LP" abreviado. (cuarto commit)
+

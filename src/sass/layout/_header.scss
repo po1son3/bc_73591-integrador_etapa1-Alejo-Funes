@@ -127,8 +127,19 @@
 
     &__form-search {
         background-color: #EAECEB;
-    }
+        width: 400px;
+        height: 30px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    
 
+
+    }
+/* @media screen  and(min-width 992px){
+    height: 10px;
+} */
     &__form-submit {
         background-color: #383D3B;
         color: #EAECEB;
@@ -136,11 +147,30 @@
 
     &__carrito-container {
         /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+        display: flex;
         flex: 0 0 3rem; /* shorthand (grow shrink basis) */
+        justify-content: center;
+        align-items: center;
+     /*    
+        font-size: 2rem;
+        color: white; */
         background-color: #1D201F;
     }
 }
-
+.iconamoon--shopping-bag {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-width='1'%3E%3Cpath stroke-linejoin='round' d='M4 9h16l-.835 9.181A2 2 0 0 1 17.174 20H6.826a2 2 0 0 1-1.991-1.819z'/%3E%3Cpath stroke-linecap='round' d='M8 11V8a4 4 0 1 1 8 0v3'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: white !important;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    
+  }
 /* ----------------------------------------------- */
 /* MENÚ TOOGLE                                     */
 /* ----------------------------------------------- */
@@ -193,4 +223,4 @@
 
 
 
-
+/* 🛒  carrito de compras*/
