@@ -19,14 +19,17 @@
     
     /* Hacer funcionar el checkbox -> Hacer funcionar el menú hamburgüesa */
 
-    &:checked + .nav-bar {    /* al ponerle "checked" este mismo pasa a permanecer activo */
+    &:checked ~  .nav-bar {    /* al ponerle "checked" este mismo pasa a permanecer activo */
         display: block;
-    }
+
+
+       }
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors */
     &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
-        background-color: yellow;
+        background-color: #EAECEB;
+    
     }
-  
+
 }
 
 /* ----------------------------------------------- */
@@ -154,14 +157,16 @@
         background-color: #383D3B;
         color: #EAECEB;
     }
-
+    
     &__carrito-container {
         /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
         display: flex;
         flex: 0 0 3rem; /* shorthand (grow shrink basis) */
         justify-content: center;
         align-items: center;
-/*    
+        
+        /*          
+        
         font-size: 2rem;
         color: white; */
         background-color: #1D201F;
@@ -183,102 +188,113 @@
 }
 
 
-@media screen and (min-width 992px){
-    .search-bar{
-        background-color: red;
-        color: red;
-    }
-} 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ----------------------------------------------- */
-/* MENÚ TOOGLE                                     */
-/* ----------------------------------------------- */
-
-.menu-toogle {
-    display: block;
-
+/* @media screen and (min-width: 576px) { // cómo debería de aplicarse el media.
+.search-bar {
     background-color: red;
-    flex: 0 0 3rem;
-    position: relative;
-    cursor: pointer; /* manito, al ponerle cursos pointer lo que pasa es que al achicar el modelo el cursos se hace redondo simulando a lo que sería el dedo */
-
-    &__label { /* .menu-toogle__label */
-        display: block;
-        background-color: black;
-        height: 100%;
-    }
-
-    &__top-bread, /* .menu-toogle__top-bread */
-    &__meat, /* .menu-toogle__top-bread */
-    &__bottom-bread { /* .menu-toogle__top-bread */
-        displaY: block;
-        background-color: #333;
-        height: .2rem;
-        position: absolute;
-        left: .5rem;
-        right: .5rem;
-    }
-
-    &__top-bread {
-        top: .8rem;
-    }
-
-    &__meat { /* Centrar sin usar flexbox */
-        top: 50%; /* centrando verticalmente */
-        margin-top: -.1rem;
-    }
-
-    &__bottom-bread {
-        bottom: .8rem;
-    }
-
-    @media screen and (min-width: 992px) {
-        & { /* .menu-toogle */
-            display: none;  
+    color: red;
+    
+    &__form-container {
+        background-color: lime;
         }
-    }
+        }
+        }
+        */
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /* ----------------------------------------------- */
+        /* MENÚ TOOGLE                                     */
+        /* ----------------------------------------------- */
+        
+        .menu-toogle {
+            display: block;
+            
+            background-color: red;
+            flex: 0 0 3rem;
+            position: relative;
+            cursor: pointer; /* manito, al ponerle cursos pointer lo que pasa es que al achicar el modelo el cursos se hace redondo simulando a lo que sería el dedo */
+            
+            &__label { /* .menu-toogle__label */
+                display: block;
+                background-color: black;
+                height: 100%;
+            }
+            
+            &__top-bread, /* .menu-toogle__top-bread */
+            &__meat, /* .menu-toogle__top-bread */
+            &__bottom-bread { /* .menu-toogle__top-bread */
+                displaY: block;
+                background-color: #333;
+                height: .2rem;
+                position: absolute;
+                left: .5rem;
+                right: .5rem;
+            }
+            
+            &__top-bread {
+                top: .8rem;
+            }
+            
+            &__meat { /* Centrar sin usar flexbox */
+                top: 50%; /* centrando verticalmente */
+                margin-top: -.1rem;
+            }
+            
+            &__bottom-bread {
+                bottom: .8rem;
+            }
 
-}
-
-
-
+            @media screen and (min-width: 992px) {
+                & { /* .menu-toogle */
+                    display: none;  
+                }
+            }
+            
+            /* &:hover{
+                    background-color: red;
+                } */
+        }
+        
+        
+        
 /* 🛒  carrito de compras*/
