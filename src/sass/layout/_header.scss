@@ -2,9 +2,10 @@
 /* HEADER                                          */
 /* ----------------------------------------------- */
 /* MOBILE FIRST */
+
 .main-header {
     display: flex;
-    flex-direction: column-reverse;// esto es para el menú hamburguesa
+    flex-direction: column;// esto es para el menú hamburguesa
     color: #EAECEB;
 
     @media screen and (min-width: 992px) {
@@ -23,7 +24,7 @@
         display: block;
 
 
-       }
+    }
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors */
     &:checked ~ .search-bar .menu-toogle .menu-toogle__label {
         background-color: #EAECEB;
@@ -37,10 +38,12 @@
 /* ----------------------------------------------- */
 
 .nav-bar {
+    display: flex ;
     background-color: #272A29;
     display: none;
     border: 1px solid #1D201F;
     
+
     &__nav-list { /* .nav-bar__nav-list */
         display: flex;
         flex-direction: column;
@@ -69,25 +72,27 @@
 
     @media screen and (min-width: 992px) {
         & {
+           
             display: block;
+            
         }
     }
 }
-
-
-
-/* ----------------------------------------------- */
-/* SEARCH BAR                                          */
-/* ----------------------------------------------- */
-
-.search-bar {
-    display: flex;
-    background-color: white;
-    justify-content: space-around;
-    
-
-    &__logo-container { /* .search-bar__logo-container */
-        width: 18.75rem;
+        
+        
+        
+        /* ----------------------------------------------- */
+        /* SEARCH BAR                                          */
+        /* ----------------------------------------------- */
+        
+        .search-bar {
+            display: flex;
+            background-color: white;
+            justify-content: space-around;
+            
+            
+            &__logo-container { /* .search-bar__logo-container */
+                width: 18.75rem;
         height: 3.75rem;
         background-color: #1D201F;
         display: flex;
