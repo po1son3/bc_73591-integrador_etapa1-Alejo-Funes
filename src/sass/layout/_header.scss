@@ -62,17 +62,20 @@
         background-color: pink;
     }
     
-    &__nav-link {
+    &__nav-link{
         display: block;
         background-color: #383D3B;
         padding: 1rem 2rem;
         color: #EAECEB;
         box-shadow: 0px 1px 2px #383D3B;
     }
+    &__nav-link:hover{
+        background-color: black;
+    }
 
     @media screen and (min-width: 992px) {
         & {
-           
+    
             display: block;
             
         }
@@ -85,11 +88,14 @@
         /* SEARCH BAR                                          */
         /* ----------------------------------------------- */
         
-        .search-bar {
+        .search-bar{
             display: flex;
             background-color: white;
             justify-content: space-around;
             
+            &__form-submit:hover{
+                background-color: black;
+            }
             
             &__logo-container { /* .search-bar__logo-container */
                 width: 18.75rem;
@@ -120,7 +126,7 @@
         .texto-corto{
             display: none;
         }
-        
+    
     }
 
 }
@@ -131,7 +137,7 @@
 
     &__form-container { /* .search-bar__form-container */
         padding: 1rem;
-        padding-right: 200px;
+        padding-right: 270px;
 
         background-color: #1D201F;
         display: flex;
@@ -143,12 +149,13 @@
 
     &__form-label {
         background-color: #383D3B;
+        padding: 7px;
     
     }
 
     &__form-search {
         background-color: #EAECEB;
-        width: 400px;
+        width: 500px;
         height: 30px;
         border-radius: 4px;
         display: flex;
@@ -161,6 +168,8 @@
     &__form-submit {
         background-color: #383D3B;
         color: #EAECEB;
+        padding:7px;
+        border-radius: 2px;
     }
     
     &__carrito-container {
@@ -169,14 +178,10 @@
         flex: 0 0 3rem; /* shorthand (grow shrink basis) */
         justify-content: center;
         align-items: center;
-        
-        /*          
-        
-        font-size: 2rem;
-        color: white; */
         background-color: #1D201F;
     }
 }
+
 .iconamoon--shopping-bag {
     display: inline-block;
     width: 30px;
