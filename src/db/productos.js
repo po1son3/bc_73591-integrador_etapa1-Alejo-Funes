@@ -1,38 +1,38 @@
 const productos = [
     { 
       id: 1, 
-      nombre: "Iphone 11 Pro Max", 
-      foto: "imgs/apple-iphone-11-pro-max.jpg", 
-      descripcion: "Iphone 11 super pro max", 
-      precio: 222.20
+      nombre: "Remera Paradise", 
+      foto: "imgs/paradise-logo-pink.jpg", 
+      descripcion: "Remera T-Shirt corta color pink", 
+      precio: 30.000
     },
     { 
       id: 2, 
-      nombre: "IPhone 12", 
-      foto: "imgs/apple-iphone-12.jpg", 
-      descripcion: "Iphone 12, flojito", 
-      precio: 333.30
+      nombre: "Remera Paradise", 
+      foto: "imgs/paradise-logo-black.jpg", 
+      descripcion: "Remera T-Shirt corta color black", 
+      precio: 33.000
     },
     { 
       id: 3, 
-      nombre: "Camara Canon", 
-      foto: "imgs/camara-canon.jpg", 
-      descripcion: "Camara ultra 4k", 
-      precio: 444.40
+      nombre: "Remera Paradise", 
+      foto: "imgs/paradise-japan.jpg", 
+      descripcion: "Remera T-Shirt corta fondo wave behind", 
+      precio: 25.000
     },
     { 
       id: 4, 
-      nombre: "Drone DJI", 
-      foto: "imgs/drone-dji.jpg", 
-      descripcion: "Alto drone", 
-      precio: 555.50
+      nombre: "Remera Paradise", 
+      foto: "imgs/paradise-project.jpg", 
+      descripcion: "Remera T-Shirt corta fondo project behind", 
+      precio: 25.000
     },
     { 
       id: 5, 
-      nombre: "Auriculares Sony", 
-      foto: "imgs/auriculares-sony.jpg", 
-      descripcion: "Cancelación activa!", 
-      precio: 666.60
+      nombre: "Remera Paradise", 
+      foto: "imgs/paradise-project-2.jpg", 
+      descripcion: "Remera T-Shirt corta fondo project front", 
+      precio: 25.000
     }
 ]
 
