@@ -77,7 +77,7 @@
     
 }
 
-    &__nav-link{
+    &__nav-link{ /* este es el inico, alta,contacto,nosotros */
     display: block;
     background-color: #383D3B;
     padding: 1rem 2rem;
@@ -88,7 +88,7 @@
 
 }
     
-    &__nav-link:hover{
+    &__nav-link:hover{ /*  esto hace que al pasar el mouse sobre los nav links haya un efecto hover de color negro */
     background-color: black;
 }
     
@@ -110,7 +110,7 @@
     display: flex;
     justify-content: space-between; /* hace que el logo lp esté pegado al borde */
 
-    &__form-submit:hover{  /* este es el botón de buscar */
+    &__form-submit:hover{  /* este es el botón de buscar, hace que haya un efecto hover para que al pasar el mouse sea de color negro */
         background-color: black;
     }
 
@@ -126,11 +126,11 @@
     
         .texto-largo {
             display: none;
-            font-size: 22px;
+            font-size: 20px;
         }
         .texto-corto { 
             display: block;
-            font-size: 30px;
+            font-size: 28px;
         }
     
         @media screen and (min-width:992px) {
@@ -161,11 +161,12 @@
         flex-direction: row; /*  hace que este del lado izquierdo el txt del "buscar producto" y hace que el botón este del lado derecho (buscador) */
         align-items: center;
         gap: 4px;
+        
 
 
         @media screen and (min-width: 576px) {
         gap: 10px;
-        padding: 10px 20px;
+        padding: 10px 10px;
             
         } 
     }
@@ -251,7 +252,7 @@
 } 
 
 /* ----------------------------------------------- */
-/* MENÚ TOOGLE //! aca es donde estoy ahora, 15/02 */
+/* MENÚ TOOGLE //!ESTE ES EL MENÚ HAMBURGUESA */
 /* ----------------------------------------------- */
 
 
