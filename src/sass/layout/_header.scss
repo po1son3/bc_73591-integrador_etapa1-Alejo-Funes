@@ -255,3 +255,44 @@
 /* ----------------------------------------------- */
 
 
+.menu-toogle {
+    display: block;
+    background-color: white;
+    flex: 0 0 3rem;
+    position: relative;
+    cursor: pointer; /* manito, al ponerle cursos pointer lo que pasa es que al achicar el modelo el cursos se hace redondo simulando a lo que sería el dedo */
+
+    &__label { /* .menu-toogle__label */
+        display: block;
+        background-color: black;
+        height: 100%;
+    }
+
+    &__top-bread, /* .menu-toogle__top-bread */
+            &__meat, /* .menu-toogle__top-bread */
+            &__bottom-bread { /* .menu-toogle__top-bread */
+                display: block;
+                background-color: #333;
+                height: .2rem;
+                position: absolute;
+                left: .5rem;
+                right: .5rem;
+            }
+
+            &__top-bread {
+                top: .8rem;
+            }
+            &__meat { /* Centrar sin usar flexbox */
+                top: 50%; /* centrando verticalmente */
+                margin-top: -.1rem;
+            }
+            &__bottom-bread {
+                bottom: .8rem;
+            }
+            @media screen and (min-width: 992px) {
+                & { /* .menu-toogle */
+                    display: none;  
+                }
+            }
+
+}
