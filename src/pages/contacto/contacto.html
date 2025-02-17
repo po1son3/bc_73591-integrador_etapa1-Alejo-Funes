@@ -54,31 +54,39 @@
     </header> <!-- aca termina el header -->
 <!-- -------------------------------------------------------------------------------------------------->
 
-<main>
-    <form action="#">
-
+<main class="main-form">
+    <form class="main-form__form" action="#">
+        <div class="main-form__name">
         <label for="Nombre">
             <input type="text" id="Nombre y Apellido" placeholder="nombre y apellido">
         </label>
+        </div>
 
-        <label for="">
+        <div class="main-form__mail">
+        <label for="email">
             <input type="email" id="Mail" placeholder="email">
         </label>
+        </div>
 
+        <div class="main-form__phone">
         <label for="numero-de-telefono">
         <input type="number" id="Numero">
         </label>
-        
+        </div>
+
+        <div class="main-form__description">    
         <label for="description">
             <textarea name="description" id="Descripcion"></textarea>
         </label>
+        </div>
 
-        <label for="">
+        <div class="main-form__send">
+        <label for="Send">
             <input type="submit"  value="Enviar">
         </label>
+        </div>
 
-    </main>
-    
+</main>
 </form>
 <script type="module" src="contacto.js"></script>
 </body>
