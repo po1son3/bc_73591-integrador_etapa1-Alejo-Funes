@@ -54,40 +54,35 @@
     </header> <!-- aca termina el header -->
 <!-- -------------------------------------------------------------------------------------------------->
 
-<main class="main-form">
+<!-- acá empieza el formulario -->
+<main class="main-form"> 
     <form class="main-form__form" action="#">
         <div class="main-form__name">
-        <label for="Nombre">
-            <input type="text" id="Nombre y Apellido" placeholder="nombre y apellido">
-        </label>
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="Nombre y Apellido" placeholder="nombre y apellido" required>
         </div>
 
         <div class="main-form__mail">
-        <label for="email">
-            <input type="email" id="Mail" placeholder="email">
-        </label>
+        <label for="email">Mail</label>
+        <input type="email" id="Mail" placeholder="email" required>
         </div>
 
         <div class="main-form__phone">
-        <label for="numero-de-telefono">
-        <input type="number" id="Numero">
-        </label>
+        <label for="numero-de-telefono">Número</label>
+        <input type="number" id="Numero" placeholder="numero de telefono" required>
         </div>
 
         <div class="main-form__description">    
-        <label for="description">
-            <textarea name="description" id="Descripcion"></textarea>
-        </label>
+        <label for="description">Descripción</label>
+        <textarea name="description" id="Descripcion" placeholder="Añade una descripcion(opcional)"></textarea>
         </div>
 
         <div class="main-form__send">
-        <label for="Send">
-            <input type="submit"  value="Enviar">
-        </label>
+        <label for="send"></label>
+        <button class="main-form__send__button" type="submit">Enviar</button>
         </div>
-
 </main>
-</form>
+</form> <!-- acá termina el formulario -->
 <script type="module" src="contacto.js"></script>
 </body>
 </html>
