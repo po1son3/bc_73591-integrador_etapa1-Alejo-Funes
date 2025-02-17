@@ -6,10 +6,11 @@
     <title>Contacto</title>
 </head>
 <body>
+
 <header class="main-header">
 <input type="checkbox" id="menu">
 
-
+<!--  acá empieza el search bar -->
 <div class="search-bar">
     <div class="search-bar__logo-container">
         <span class="texto-largo">Luxury Paradise</span>
@@ -18,22 +19,40 @@
     <form action="#" class="search-bar__form-container">
         <label for="busqueda" class="search-bar__form-label">Buscar Productos</label>
         <input type="search" id="busqueda" class="search-bar__form-search">
-        <button type="submit" class="search-bar__form-submit">Buscar</button>  
-    </form> 
+        <button type="submit" class="search-bar__form-submit">Buscar</button>
+    </form>
     <div class="search-bar__carrito-container">
         <span class="iconamoon--shopping-bag"></span>
-    </div> 
+    </div>
     <div class="menu-toogle">
         <label for="menu" class="menu-toogle__label">
-            <span class="menu-toogle__top-bread"></span>
-            <span class="menu-toogle__meat"></span>
-            <span class="menu-toogle__bottom-bread"></span>
+        <span class="menu-toogle__top-bread"></span>
+        <span class="menu-toogle__meat"></span>
+        <span class="menu-toogle__bottom-bread"></span>
         </label>
-    </div>
-</div>
-
-
-</header>
+    </div> <!-- .menu-toogle -->
+    </div> <!-- .search-bar -->
+    
+    <!--  aca empieza el nav bar -->
+    <nav class="nav-bar">
+    <ul class="nav-bar__nav-list">
+        <!-- li*4.nav-bar__nav-item>a.nav-bar__nav-link{Inicio} -->
+        <li class="nav-bar__nav-item">
+        <a href="/index.html" class="nav-bar__nav-link">Inicio</a> <!-- le agrego el "/", esto sirve para que en cada página que navegue, pueda volver desde el nav bar-->
+        </li>
+        <li class="nav-bar__nav-item">
+        <a href="" class="nav-bar__nav-link">Alta</a>
+            </li>
+            <li class="nav-bar__nav-item">
+            <a href="/nosotros.html" class="nav-bar__nav-link">Nosotros</a>
+            </li>
+            <li class="nav-bar__nav-item">
+            <a href="/contacto.html" class="nav-bar__nav-link">Contacto</a>
+            </li>
+        </ul>
+        </nav> <!-- aca termina el .nav-bar -->
+    </header> <!-- aca termina el header -->
+<!-- -------------------------------------------------------------------------------------------------->
 
 <main>
     <form action="#">
@@ -61,6 +80,7 @@
     </main>
     
 </form>
+<script type="module" src="contacto.js"></script>
 </body>
 </html>
 
