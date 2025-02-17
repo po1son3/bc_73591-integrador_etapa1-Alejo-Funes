@@ -67,11 +67,12 @@ padding: 10px;
     }
 }
 
-
-
-
-
-
-
-
 } /* llave del main-form */
+
+iframe {
+    @media screen and (min-width: 700px) {
+        width: 70%;
+        height: 500px; 
+
+    }
+}
