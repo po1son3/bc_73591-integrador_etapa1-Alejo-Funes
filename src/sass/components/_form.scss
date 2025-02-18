@@ -15,14 +15,16 @@
 
 
 &__field { /* lp logo */
-    background-color: black;
-    color: white;
-    margin-bottom: 30px;
-    width: 30px;
-    height: 50px;
-    text-align: center;
-    justify-self:flex-end;
-    padding: 10px; 
+
+background-color: rgba(0, 0, 0, 0.5);
+width: 300px;
+height: 550px;
+text-align: center;
+padding-bottom: 50px;
+font-size: 15px;
+border-radius: 5px;
+box-shadow: 5px solid black;
+
 }
 
 &__legend { /* informacion personal */
@@ -30,6 +32,8 @@
     border: 1px solid white;
     margin-bottom: 30px;
     padding: 10px;
+    text-align: center;
+    
 }
 
 &__form {
@@ -46,6 +50,7 @@
     flex-direction: column; /* hace que esten en columnas de arriba para abajo los inputs */
     text-align: center;
     gap: 0.7rem;
+    padding-top: 10px ;
 }
 
 &__send {
@@ -56,14 +61,14 @@ padding: 10px;
 }
 
 &__send__button {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     color:white;
     border: 1px solid white;
     border-radius: 4px;
     cursor: pointer;
 
     &:hover {
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.10);
     }
 }
 
