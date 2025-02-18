@@ -13,7 +13,6 @@
     color: #EAECEB; 
 
 
-
 &__field { /* lp logo */
 
 background-color: rgba(0, 0, 0, 0.5);
@@ -74,7 +73,7 @@ padding: 10px;
 
 } /* llave del main-form */
 
-iframe {
+iframe { /* mapa google local */
     @media screen and (min-width: 700px) {
         width: 70%;
         height: 500px; 

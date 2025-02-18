@@ -56,32 +56,34 @@
 
 <!-- acá empieza el formulario -->
 <main class="main-form"> 
-    <fieldset class="main-form__field">Recibirás mas Información sobre nuestros productos al completar el formulario:
+    <fieldset class="main-form__field">
         <legend class="main-form__legend">Información Personal</legend>
+        <p>Recibirás mas Información sobre nuestros productos al completar el formulario:</p>
+
         <form class="main-form__form" action="#">
             <div class="main-form__name">
             <label for="Nombre">Nombre</label>
-            <input type="text" id="Nombre y Apellido" placeholder="nombre y apellido" required>
+            <input type="text" id="Nombre" placeholder="nombre y apellido" required>
         </div>
         
         <div class="main-form__mail">
             <label for="email">Mail</label>
-            <input type="email" id="Mail" placeholder="email" required>
+            <input type="email" id="email" placeholder="email" required>
         </div>
         
         <div class="main-form__phone">
-            <label for="numero-de-telefono">Número</label>
+            <label for="Numero">Número</label>
             <input type="number" id="Numero" placeholder="numero de telefono" required>
         </div>
         
         <div class="main-form__description">    
             <label for="description">Descripción</label>
-            <textarea name="description" id="Descripcion" placeholder="Añade una descripcion(opcional)"></textarea>
+            <textarea name="description" id="description" placeholder="Añade una descripcion(opcional)"  ></textarea>
         </div>
         
         <div class="main-form__send">
             <label for="send"></label>
-            <button class="main-form__send__button" type="submit">Enviar</button>
+            <button id="send" class="main-form__send__button" type="submit">Enviar</button>
         </div>
         
     </form> <!-- acá termina el formulario -->
